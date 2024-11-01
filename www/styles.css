@@ -1,0 +1,53 @@
+/* @import 'pico.violet.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+/* www/custom.css */
+
+/* Define custom CSS variables for a Pico-styled theme */
+:root {
+    /* Color scheme */
+    --primary-color: var(--pico-primary);      /* Primary color (Green) */
+    --secondary-color: var(--pico-secondary);      /* Secondary color (Orange) */
+    --background-color: var(--pico-background-color);  /* Background color */
+    --text-color: var(--pico-color);           /* Primary text color */
+    --muted-color: var(--pico-muted-color);          /* Muted text color */
+
+    /* Button styles */
+    --button-bg: var(--primary-color);
+    --button-text: var(--pico-primary-inverse);
+
+    /* Slider styles */
+    --slider-track-color: var(--secondary-color);
+    --slider-handle-color: var(--primary-color);
+}
+
+/* Apply Pico.css styles and custom variables to elements */
+
+
+/* Slider */
+.custom-slider .irs-bar {
+    background-color: var(--slider-track-color);
+}
+
+.custom-slider .irs-handle {
+    background-color: var(--slider-handle-color);
+}
+
+.custom-slider .irs-single {
+    background-color: var(--slider-handle-color);
+}
+
+/* Body and text */
+body {
+    background-color: var(--pico-background-color);
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+p.muted {
+    color: var(--muted-color);
+}
